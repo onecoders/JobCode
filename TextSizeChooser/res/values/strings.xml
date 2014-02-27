@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TextSizeChooser</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!中文字体。px</string>
+    <string name="click_to_reduce">缩小1sp</string>
+    <string name="click_to_crease">增加1sp</string>
+    <string name="click_to_little_reduce">缩小0.1sp</string>
+    <string name="click_to_little_crease">增加0.1sp</string>
+    <string name="min_text_size_hint">已是安卓机子上显示的最小号字体</string>
+    <string name="max_text_size_hint">已經夠大的了</string>
+    <string name="input_px_value_hint">请输入px值</string>
+    <string name="px_value">---px值---</string>
+    <string name="sp_value">---sp值---</string>
+    <string name="click_to_convert">点击转换</string>
+    <string name="invalid_px_value">请输入有效px值！</string>
+
+</resources>
