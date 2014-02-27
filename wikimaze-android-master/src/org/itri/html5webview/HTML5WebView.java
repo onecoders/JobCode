@@ -43,6 +43,7 @@ public class HTML5WebView extends WebView {
 
 		mProgressDialog = new ProgressDialog(context);
 		mProgressDialog.setMessage("Loading...");
+		mProgressDialog.setCanceledOnTouchOutside(false);
 
 		mBrowserFrameLayout = (FrameLayout) LayoutInflater.from(a).inflate(
 				R.layout.custom_screen, null);
