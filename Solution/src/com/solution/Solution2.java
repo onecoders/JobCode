@@ -88,7 +88,7 @@ public class Solution2 {
 		}
 		for (int i = 0; i < node.next.size(); i++) {
 			Node next = node.next.get(i);
-			next.front.add(node);
+			next.front.add(node.label);
 			next.front.addAll(node.front);
 			node.visited = true;
 			loop(next);
@@ -99,11 +99,11 @@ public class Solution2 {
 
 		int label;
 		boolean visited;
-		Vector<Node> front;
+		Vector<Integer> front;
 		Vector<Node> next;
 
 		{
-			front = new Vector<Node>();
+			front = new Vector<Integer>();
 			next = new Vector<Node>();
 		}
 
