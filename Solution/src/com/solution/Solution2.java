@@ -90,6 +90,9 @@ public class Solution2 {
 			Node next = node.next.get(i);
 			next.front.add(node.label);
 			next.front.addAll(node.front);
+			if (i == node.next.size() - 1) {
+				node.front.clear();
+			}
 			node.visited = true;
 			loop(next);
 		}
