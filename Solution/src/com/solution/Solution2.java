@@ -139,7 +139,7 @@ public class Solution2 {
 		int[] T = new int[] { 10, 8, 3, 12, 6, 9, 10, 11, 4, 1, 16, 6, 9, 14,
 				10, 1, 16 };
 		int[] result = new Solution2().solution(K, T);
-		System.out.println("Result Length is:" + result.length);
+		// result: 16 2 7 13 0 5 15
 		for (int i : result) {
 			System.out.print(i + " ");
 		}
