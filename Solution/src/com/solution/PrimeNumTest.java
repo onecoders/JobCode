@@ -1,22 +1,22 @@
 package com.solution;
 
 /**
- * Class Description goes here.
+ * Calculate Prime number after a specified number
  * 
  */
 
-public class SuShuTest {
+public class PrimeNumTest {
 
 	public void calculate(int K) {
 		K++;
-		boolean isSuShu = false;
+		boolean isPrimeNum = false;
 		for (int i = 2; i < K; i++) {
 			if (K % i == 0) {
-				isSuShu = true;
+				isPrimeNum = true;
 				break;
 			}
 		}
-		if (isSuShu) {
+		if (isPrimeNum) {
 			calculate(K);
 		} else {
 			System.out.println(K);
@@ -28,7 +28,7 @@ public class SuShuTest {
 	 */
 	public static void main(String[] args) {
 		int K = 9949;
-		new SuShuTest().calculate(K);
+		new PrimeNumTest().calculate(K);
 	}
 
 }

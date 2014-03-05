@@ -1,8 +1,6 @@
 package com.solution;
 
 /**
- * Class Description goes here.
- * 
  * Lazy initialization holder class
  */
 
