@@ -1,6 +1,8 @@
 Roy's plan   
 1.Learning Jackson   
-2.Design Patterns   
+2.23 Design Patterns   
+	Lazy initialization holder class(Singleton)   
+	
 3.Find Some Great Algorithm   
 4.Movable View in Android   
 5.TV Controller Application   
