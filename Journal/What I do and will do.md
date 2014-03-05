@@ -8,4 +8,7 @@ Roy's plan
 7.ARM   
 8.Apply for different screen show   
 9.Membership Application & Club Application   
-10.
+10.Thinking in Java   
+11.Code Refactoring   
+12.Clean Code  
+13.Efficiency of Code   

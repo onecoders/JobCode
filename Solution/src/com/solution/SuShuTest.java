@@ -1,8 +1,13 @@
 package com.solution;
 
+/*
+ * Class Description goes here.
+ * 
+ */
+
 public class SuShuTest {
-	
-	public void calculate(int K){
+
+	public void calculate(int K) {
 		K++;
 		boolean isSuShu = false;
 		for (int i = 2; i < K; i++) {
@@ -17,7 +22,7 @@ public class SuShuTest {
 			System.out.println(K);
 		}
 	}
-	
+
 	/**
 	 * @param args
 	 */
