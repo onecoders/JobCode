@@ -12,3 +12,5 @@ Roy's plan
 11.Code Refactoring   
 12.Clean Code  
 13.Efficiency of Code   
+14.Python Django   
+15.Traveler Problem   
