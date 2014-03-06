@@ -3,8 +3,10 @@ package org.itri.html5webview;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -200,10 +202,16 @@ public class HTML5WebView extends WebView {
 	}
 
 	private class MyWebViewClient extends WebViewClient {
+
 		@Override
 		public boolean shouldOverrideUrlLoading(WebView view, String url) {
 			Log.i(LOGTAG, "shouldOverrideUrlLoading: " + url);
-			view.loadUrl(url);
+			if (url.startsWith("tel:")) {
+				Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse(url));
+				mContext.startActivity(intent);
+			} else if (url.startsWith("http:") || url.startsWith("https:")) {
+				view.loadUrl(url);
+			}
 			return true;
 		}
 
