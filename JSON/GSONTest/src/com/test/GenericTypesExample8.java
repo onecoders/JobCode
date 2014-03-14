@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.google.gson.Gson;
+import com.google.gson.annotations.SerializedName;
 
 public class GenericTypesExample8 {
 
 	private int a = 1;
 	private String b = "b";
+	@SerializedName("bagOfPrimitivesList")
 	private List<BagOfPrimitives> list = new ArrayList<BagOfPrimitives>();
 
 	{
@@ -20,6 +22,7 @@ public class GenericTypesExample8 {
 	static class BagOfPrimitives {
 
 		private int value1 = 1;
+		@SerializedName("test")
 		private String value2 = "abc";
 		private transient int value3 = 3;
 
