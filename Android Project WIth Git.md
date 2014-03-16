@@ -1,4 +1,4 @@
-1.Create a repository on Github  
+1.Create a repository on Github(init with .gitignore)  
 2.Clone into local  
 3.Create a Android project in the repository cloned  
 4.Add .gitignore file  
