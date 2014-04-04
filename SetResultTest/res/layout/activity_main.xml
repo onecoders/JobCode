@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/go2JsonActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:text="@string/go2JsonActivity" />
+
+    <Button
+        android:id="@+id/go2SerializableActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/go2JsonActivity"
+        android:layout_margin="5dip"
+        android:text="@string/go2SerializeActivity" />
+
+    <Button
+        android:id="@+id/go2ParcelableActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/go2SerializableActivity"
+        android:layout_margin="5dip"
+        android:text="@string/go2PacelableActivity" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/go2ParcelableActivity"
+        android:layout_margin="10dip"
+        android:gravity="center_horizontal"
+        android:text="Hello \n World!" />
+
+</RelativeLayout>

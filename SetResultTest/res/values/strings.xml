@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SetResultTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="go2JsonActivity">Use Json</string>
+    <string name="go2SerializeActivity">Use Serialize</string>
+    <string name="go2PacelableActivity">Use Pacelable</string>
+    <string name="back">Back</string>
+
+    <string-array name="activity_title">
+        <item>-Use Json- Activity</item>
+        <item>-Use Serializable- Activity</item>
+        <item>-Use Parcelable- Activity</item>
+    </string-array>
+
+</resources>
