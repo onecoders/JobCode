@@ -38,15 +38,12 @@ package com.solution;
 public class Solution4 {
 
 	public int solution(int[] A) {
+		int length = A.length;
 		int distance = 0;
-		for (int P = 0; P < A.length; P++) {
-			int lastQ = 0;
-			for (int Q = A.length - 1; Q >= lastQ; Q--) {
-				if (P <= Q && A[P] <= A[Q]) {
-					if (Q - P > distance) {
-						distance = Q - P;
-					}
-					lastQ = Q;
+		for (int P = 0; P < length - distance; P++) {
+			for (int Q = length - 1; Q > P + distance; Q--) {
+				if (A[P] <= A[Q]) {
+					distance = Q - P;
 					break;
 				}
 			}
@@ -59,8 +56,14 @@ public class Solution4 {
 	 */
 	public static void main(String[] args) {
 		int[] A = { 5, 3, 6, 3, 4, 2 };
+		long begin = System.currentTimeMillis();
+		for (int i = 0; i < 10000000; i++) {
+			new Solution4().solution(A);
+		}
+		long end = System.currentTimeMillis();
+		System.out.println("Task time is " + (end - begin));
 		int distance = new Solution4().solution(A);
-		System.out.println("The furthest apart is" + distance);
+		System.out.println("The furthest apart is " + distance);
 	}
 
 }
