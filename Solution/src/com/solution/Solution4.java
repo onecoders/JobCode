@@ -40,13 +40,18 @@ public class Solution4 {
 	public int solution(int[] A) {
 		int length = A.length;
 		int distance = 0;
+		int lastP = 0;
 		for (int P = 0; P < length - distance; P++) {
+			if (A[P] > A[lastP] && A[P] > A[P + distance]) {
+				continue;
+			}
 			for (int Q = length - 1; Q > P + distance; Q--) {
 				if (A[P] <= A[Q]) {
 					distance = Q - P;
 					break;
 				}
 			}
+			lastP = P;
 		}
 		return distance;
 	}
